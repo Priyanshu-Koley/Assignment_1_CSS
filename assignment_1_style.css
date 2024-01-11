@@ -1,0 +1,63 @@
+/* declare two variables purple and green color */
+:root{
+    --purple: #80007E;
+    --green:#D8DA3D;
+}
+/* setting background, padding and margin to 0 for the whole html document */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--green);
+}
+/* outer container section */
+.container{
+    color: var(--purple);
+    font-family: Georgia, serif;
+    padding: 10px;
+    display: flex;
+    height: 100vh;
+}
+/* left aside section  */
+.left{
+    width: 245px;
+}
+/* languages div */
+.lang{
+    background-color: white;
+    border-right: 19px solid black;
+    margin: 0px 0px 9px 0px;
+    padding: 7px 5px;
+    font-size: 17px;
+}
+.lang:first-child{
+    margin: 30px 0px 9px 0px;
+}
+/* right main section  */
+.right{
+    padding: 0px 0px 0px 50px;
+    width: 100%;
+}
+/* heading of the web page */
+.heading{
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    margin: 12px 0px 30px 0px;
+}
+/* dotted border above the footer  */
+.content{
+    border-bottom: 1px dotted;
+}
+.content > p{
+    margin: 22px 0px;
+}
+.content > p:last-child{
+    margin: 22px 0px 50px 0px;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
